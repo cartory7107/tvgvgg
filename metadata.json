@@ -1,0 +1,8 @@
+{
+  "name": "MarkBook AI Hub",
+  "description": "World's AI discovery and research platform to explore, compare, and discover over 20,000 AI tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

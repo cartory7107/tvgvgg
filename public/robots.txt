@@ -1,0 +1,85 @@
+# TavBook — robots.txt
+# https://tavbook.top/robots.txt
+# Open to search engines and AI crawlers; closed on admin/auth/private surfaces
+# and on internal JSON endpoints and filter/query URLs.
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin-inbox
+Disallow: /auth
+Disallow: /profile
+Disallow: /*.json$
+Disallow: /*?q=
+Disallow: /*?category=
+Disallow: /*?pricing=
+Disallow: /*?page=
+Disallow: /*?ref=
+Disallow: /*?utm_
+
+# ── Major search crawlers ──
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /admin-inbox
+Disallow: /auth
+Disallow: /profile
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /admin-inbox
+Disallow: /auth
+Disallow: /profile
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ── AI crawlers ──
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# ── Sitemaps ──
+Sitemap: https://tavbook.top/sitemap.xml
